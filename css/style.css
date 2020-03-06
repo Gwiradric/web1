@@ -1,0 +1,97 @@
+
+/*fonts related with the theme of the webpage*/
+@font-face{
+    font-family: sao-welcomett-bold;
+    src: url(../css/fonts/saowelcomett-bold.ttf);
+}
+
+@font-face{
+    font-family: sao-welcomett-regular;
+    src: url(../css/fonts/saowelcomett-regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+/*----------------------------------------------*/
+
+nav {
+    font-family: Roboto-Regular;
+    font-size: 20px;
+}
+
+p {
+    padding: 1%;
+}
+
+div {
+    padding: 1%;
+}
+
+header img{
+    width: 100%;
+}
+
+body{
+    background-color: #2E485C;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    border-color: dodgerblue;
+    text-align: center;
+    font-size: 14px;
+    font-family: Roboto-Bold;
+    border-style: solid;
+    padding: 1%;
+}
+
+footer{
+    border-top-color: dodgerblue;   
+    border-top-style: solid;
+    color: white;
+    font-size: 20px;
+    font-family: sao-welcomett-regular;
+    background-color: #212529;
+}
+  
+#topBtn {
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#topBtn:hover {
+    background-color: #555;
+}
+
+li{
+    list-style: none;
+}
+
+h2,h3{
+    color:dodgerblue; 
+}
+
+.hidden{
+    display: none;
+}

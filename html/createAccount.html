@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/captcha.js"></script>
+    <title>Create Account</title>
+</head>
+
+<body>
+    <button id="topBtn" title="Go to top">Top</button>
+    <header>
+        <img src="../img/logo.png" class="img-fluid" alt="Responsive image">
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"> <img src="../img/icon.ico" type="icon">MAO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Movies
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="allMovies.html">All Movies</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>CREATE ACCOUNT</h1>
+        <form id="form" class="createAccount">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Name *" required>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <input type="text" class="form-control" placeholder="Lastname *" required>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <input type="password" class="form-control" placeholder="Password *" required>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <input type="password" class="form-control" placeholder="Confirm Password *" required>
+                </div>
+                <div class="col-sm-12">
+                    <p>Birthday</p>
+                    <input type="date" class="form-control" name="Birthday" id="Birthday">
+                </div>
+                <div class="col-sm-12">
+                    <p><input type="radio" name="sex" tabindex="9"> Male <input type="radio" name="sex"> Female</p>
+                </div>
+                <div class="col-md-12">
+                    <p id="captcha"></p>
+                    <input id="captchaInput" type="text" class="form-control" placeholder="Captcha" required>
+                    <p id="captchaResult"></p>
+                </div>
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <h3>FOLLOW US</h3>
+        <a href="https://www.facebook.com/"> <img class="img-fluid" src="../img/SocialNetworkIcons/facebook.png"
+                logo="Facebook icon" width="45 px" height="45 px"> </a>
+        <a href="https://www.twitter.com/"> <img class="img-fluid" src="../img/SocialNetworkIcons/twitter.png"
+                logo="Twitter icon" width="45 px" height="45 px"></a>
+        <a href="https://www.youtube.com/"> <img class="img-fluid" src="../img/SocialNetworkIcons/youtube.png"
+                logo="Youtube icon" width="45 px" height="45 px"></a>
+        <a href="https://www.instagram.com/"> <img class="img-fluid" src="../img/SocialNetworkIcons/instagram.png"
+                logo="Instagram icon" width="45 px" height="45 px"></a>
+        <a href="https://www.pinterest.com/"> <img class="img-fluid" src="../img/SocialNetworkIcons/pinterest.png"
+                logo="Pinterest icon" width="45 px" height="45 px"></a>
+    </div>
+    </section>
+    <footer class="clearfix container-fluid">
+        <p>Copyright 2019 &copy;</p>
+        <p>Contact us: contact@mao.com</p>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
+    <title>All Moviest</title>
+</head>
+
+<body>
+    <button id="topBtn" title="Go to top">Top</button>
+
+    <header>
+        <img src="../img/logo.png" class="img-fluid" alt="Responsive image">
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html"> <img src="../img/icon.ico" type="icon">MAO</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container">
+        <h1>Top Movies</h1>
+        <section class="row">
+
+            <article class="col-md-6">
+                <button id="addRowsBtn" class="col-md-6 btn btn-success flex">Add 3 Rows</button>
+                <button id="delBtn" class="col-md-6 btn btn-danger float-right">Delete Table</button>
+                <table id="moviesTable" class="table table-bordered table-sm table-hover mt-2">
+                    <thead class="bg-info">
+                        <tr>
+                            <th>RANKING</th>
+                            <th>MOVIE</th>
+                            <th>RATING</th>
+                            <th>#DOWNLOADS</th>
+                            <th>OPTIONS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+            </article>
+            <aside class="col-md-6">
+                <h2 id="actionTitle">Add Movie</h2>
+                <form id="form">
+                    <input id="movieName" class="form-control form-group" type="text" data-type="text"
+                        placeholder="Movie" tabindex="1" required />
+                    <input id="movieRanking" class="form-control form-group" type="number" data-type="number"
+                        placeholder="Ranking" tabindex="2" required />
+                    <input id="movieRating" class="form-control form-group" type="number" data-type="number"
+                        placeholder="Rating" tabindex="3" required />
+                    <input id="movieDownloads" class="form-control form-group" type="number" data-type="number"
+                        placeholder="#Downloads" tabindex="4" required />
+                    <button type="submit" id="addRowBtn" class="btn btn-info form-control form-group">Add</button>
+                    <button type="submit" id="saveChangesRowBtn" class="btn btn-info form-control form-group"
+                        disabled>Save Changes</button>
+                </form>
+                <h2>Filter for name</h2>
+                <div class="col-md-12">
+                    <input id="filterInput" class="form-control form-group" type="text">
+                    <button id="sendBtn"
+                        class="btn-success btn form-control form-group col-md-5 col-sm-12">Send</button>
+                    <button id="clearBtn"
+                        class="btn-success btn form-control form-group col-md-5 col-sm-12">Clear</button>
+                </div>
+            </aside>
+        </section>
+    </section>
+
+    <section class="container">
+        <h1>All Movies</h1>
+        <a href="../html/jefaporaccidente.html"><img src="../img/Films/New/Jefa-por-accidente.jpg" alt="movie"></a>
+        <img src="../img/Films/New/Rendel-Dark-Vengeance.jpg" alt="movie">
+        <img src="../img/Films/New/amor-menos-pensado.jpg" alt="movie">
+        <img src="../img/Films/New/amor-traicion-muerte.jpg" alt="movie">
+        <img src="../img/Films/New/bob-the-builder.jpg" alt="movie">
+        <img src="../img/Films/New/sol-de-medianoche.jpg" alt="movie">
+        <img src="../img/Films/Popular/El-Grinch.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Popular/Nace-estrella.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Popular/Robin-Hood.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Popular/bohemian-rhapsody.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Popular/cascanueces.jpg" alt="movie">
+        <img src="../img/Films/Popular/reino-supermanes.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Classic/Jarhead.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Classic/The-Grudgejpg.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Classic/cementerio-animalesjpg.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Classic/el-smoking.jpg" alt="movie">
+        <img src="../img/Films/Classic/hechizo-tiempo.jpg" alt="movie" class="img-fluid">
+        <img src="../img/Films/Classic/la-mexicana.jpg" alt="movie" class="img-fluid">
+    </section>
+    <footer class="clearfix container-fluid">
+        <p>Copyright 2019 &copy;</p>
+        <p>Contact us: contact@mao.com</p>
+    </footer>
+</body>
+
+</html>
